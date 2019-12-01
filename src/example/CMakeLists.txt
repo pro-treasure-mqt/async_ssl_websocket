@@ -1,0 +1,4 @@
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
+
+add_executable(async_ssl_websocket_test async_ssl_websocket_test.cpp)
+target_link_libraries(async_ssl_websocket_test async_ssl_ws)
