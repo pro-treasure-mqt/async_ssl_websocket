@@ -82,7 +82,7 @@ void WSSession::run(char const* host, char const* port, char const* endpoint)
                 delete websocket_;
                 websocket_ = nullptr;
             }
-            if (websocket_)
+            if (resolver_)
             {
                 delete resolver_;
                 resolver_ = nullptr;
@@ -98,7 +98,7 @@ void WSSession::run(char const* host, char const* port, char const* endpoint)
                 delete websocket_;
                 websocket_ = nullptr;
             }
-            if (websocket_)
+            if (resolver_)
             {
                 delete resolver_;
                 resolver_ = nullptr;
